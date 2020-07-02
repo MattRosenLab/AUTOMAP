@@ -1,4 +1,3 @@
-from base.base_train import BaseTrain
 import tqdm
 import numpy as np
 import tensorflow as tf
