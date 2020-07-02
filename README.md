@@ -9,10 +9,10 @@ Welcome to the official repository for AUTOMAP (Automated Transform by Manifold 
 Training utilizes `automap_main_train.py` and a JSON config file.
 
 ```
-python automap_main.py -c configs/train_128x128_ex_radon.json
+python automap_main_train.py -c configs/train_128x128_ex_radon.json
 ```
 
-Some key config file elements:
+Some key config file entries:
 
 "exp_name": Name of experiment. Intermediate model files will be stored in `experiments/{exp_name}`
 
@@ -47,3 +47,10 @@ Some key config file elements:
 
 ## Inference
 
+Inference utilizes `automap_main_inference.py` and a JSON config file.
+
+```
+python automap_main_inference.py -c configs/inference_128x128_ex_radon.json
+```
+
+The JSON inference config file uses similar entries as the training config file mentioned above, but instead of "train_input" and "train_output" it takes in "inference_input"
