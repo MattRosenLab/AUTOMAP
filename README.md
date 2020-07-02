@@ -29,13 +29,19 @@ Some key config file elements:
 "batch_size": Size of training mini-batch.
 
 "fc_input_dim": Input dimensionality (# nodes)
+
 "fc_hidden_dim": Fully-Connected Hidden layer dimensionality ((# nodes)
+
 "fc_output_dim": Fully-Connected Output layer dimensionality (# nodes)
+
 "im_h": 128: Output image size (height in pixels)
+
 "im_w": 128: Input image size (height in pixels)
 
 "data_dir": Directory of Training Data where "train_input" and "train_output" are located.
+
 "train_input": Input data file (as .mat file)
+
 "train_output": Output data file (as .mat file)
 
 
