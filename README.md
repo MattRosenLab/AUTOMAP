@@ -16,8 +16,6 @@ Some key config file entries:
 
 "exp_name": Name of experiment. Intermediate model files will be stored in `experiments/{exp_name}`
 
-"train_flag": Training or not. 1 or 0
-
 "resume": Resume training (based on "model_load" file)". 1 or 0
 
 "model_load": File location of model to be loaded (for resume = 1). If not resuming a previous training run, it should be set to null.

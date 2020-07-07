@@ -1,7 +1,6 @@
 {
   "exp_name": "train_64x64",
 
-  "train_flag": 1,
   "model_load": null,
 
   "num_epochs": 100,

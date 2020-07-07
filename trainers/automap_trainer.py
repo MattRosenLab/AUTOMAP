@@ -19,10 +19,7 @@ class AUTOMAP_Trainer:
 
         raw_data, targets = next(self.data.next_batch(self.config.batch_size))
 
-        if self.config.train_flag == 1: 
-            cprob = 1
-        else:
-            cprob = 0
+        cprob = 1 # multiplicative noise on (default during training)
 
         raw_data_input = tf.math.multiply(raw_data, tf.random.uniform(shape=tf.shape(raw_data),minval=0.99, maxval=1.01)) * cprob + raw_data * (1 - cprob)
 

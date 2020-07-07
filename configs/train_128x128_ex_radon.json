@@ -1,7 +1,6 @@
 {
   "exp_name": "train_128x128_radon",
 
-  "train_flag": 1,
   "model_load": null,
 
   "num_epochs": 200,
