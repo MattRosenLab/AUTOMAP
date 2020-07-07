@@ -39,7 +39,7 @@ class AUTOMAP_Trainer:
     def train(self):
         
         loss_object = tf.keras.losses.MeanSquaredError()
-        optimizer = tf.keras.optimizers.RMSprop(learning_rate = config.learning_rate)
+        optimizer = tf.keras.optimizers.RMSprop(learning_rate = self.config.learning_rate)
 
         for epoch in range(self.config.num_epochs):
             self.train_loss.reset_states()
