@@ -5,7 +5,6 @@ from models.automap_model import AUTOMAP_Basic_Model
 from trainers.automap_trainer import AUTOMAP_Trainer
 from utils.config import process_config
 from utils.dirs import create_dirs
-from utils.logger import Logger
 from utils.utils import get_args
 
 
