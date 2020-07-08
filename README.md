@@ -9,7 +9,7 @@ Welcome to the official repository for AUTOMAP (Automated Transform by Manifold 
 Training utilizes `automap_main_train.py` and a JSON config file.
 
 ```
-python automap_main_train.py -c configs/train_128x128_ex_radon.json
+python automap_main_train.py -c configs/train_64x64_ex.json
 ```
 
 Some key config file entries:
@@ -18,7 +18,7 @@ Some key config file entries:
 
 "resume": Resume training (based on "model_load" file)". 1 or 0
 
-"model_load": File location of model to be loaded (for resume = 1). If not resuming a previous training run, it should be set to null.
+"loadmodel_dir": File location of model to be loaded (for resume = 1). If not resuming a previous training run, it should be set to null.
 
 "num_epochs": Number of training epochs
 
@@ -48,7 +48,7 @@ Some key config file entries:
 Inference utilizes `automap_main_inference.py` and a JSON config file.
 
 ```
-python automap_main_inference.py -c configs/inference_128x128_ex_radon.json
+python automap_main_inference.py -c configs/inference_64x64_ex.json
 ```
 
 The JSON inference config file uses similar entries as the training config file mentioned above, but instead of "train_input" and "train_output" it takes in "inference_input"

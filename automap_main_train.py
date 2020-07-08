@@ -19,8 +19,14 @@ def main():
 
     create_dirs([config.summary_dir, config.checkpoint_dir])
     data = DataGenerator(config)
-    
-    model = AUTOMAP_Basic_Model(config)
+
+    if config.resume ==0:
+        model = AUTOMAP_Basic_Model(config)
+    elif config.resume == 1:
+        # model = tf.saved_model.load(config.load_model_file)
+        model = tf.keras.models.load_model(config.loadmodel_dir)
+    model.summary()
+
     trainer = AUTOMAP_Trainer(model, data, config)
     trainer.train()
 
