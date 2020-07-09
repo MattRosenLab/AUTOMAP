@@ -10,7 +10,7 @@ class InferenceDataGenerator:
         self.config = config
 
         inference_in_file = os.path.join(self.config.data_dir,self.config.inference_input)
-        inference_out_file = os.path.join(self.config.data_dir,self.config.inference_output)
+        inference_out_file = os.path.join(self.config.data_dir,self.config.inference_target_output)
 
         print('*** LOADING INFERENCE INPUT DATA ***')
         inference_in_dict = mat73.loadmat(inference_in_file)

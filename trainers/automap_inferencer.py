@@ -1,7 +1,7 @@
 import tqdm
 import numpy as np
 import tensorflow as tf
-
+import scipy.io as sio
 import sys
 
 class AUTOMAP_Inferencer:
@@ -18,7 +18,8 @@ class AUTOMAP_Inferencer:
         return predictions
 
     def inference(self):
-        output_array = [] 
+        output_array = np.empty((self.data.len,self.config.fc_output_dim)) 
+        # output_array = np.array([])
         for step in range(int(np.ceil(self.data.len/self.config.batch_size))):
 
             if step < np.ceil(self.data.len/self.config.batch_size)-1:
@@ -29,9 +30,11 @@ class AUTOMAP_Inferencer:
             ind_start = step*self.config.batch_size
             predictions = self.inference_step(ind_start,batch_size)
 
-            print(ind_start)
-            
-        template = 'Epoch {}, Loss: {}'
-        print('done')
+            output_array[ind_start:ind_start+batch_size,:]=predictions
+
         
+        sio.savemat(self.config.save_inference_output,{'output_array':output_array})
+
+        print('Inference Done')
+            
 

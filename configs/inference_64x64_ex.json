@@ -4,7 +4,7 @@
   "loadmodel_dir": "/hdd2/misc_hdd2/automap_opensource/AUTOMAP/experiments/train_64x64/checkpoint",
 
   "num_epochs": 100,
-  "batch_size": 1,
+  "batch_size": 4,
 
   "fc_input_dim": 8192,
   "fc_hidden_dim": 4096,
@@ -15,8 +15,9 @@
   
   "data_dir": "/hdd2/misc_hdd2/automap_opensource/automap_github_prep/models/Test_64x64/",
   "inference_input": "test_fft_x_lfi2019_fullcart_withphase_64.mat",
-  "inference_output": "test_realx_lfi2019_fullcart_withphase_64.mat",
+  "inference_target_output": "test_realx_lfi2019_fullcart_withphase_64.mat",
 
+  "save_inference_output":"/hdd2/misc_hdd2/automap_opensource/automap_github_prep/models/Test_64x64/inf_out.mat",
 
   "learning_rate": 0.001
   
