@@ -19,5 +19,5 @@
    "train_output": "train_x_imagenet_radon_128.mat",
 
 
-   "learning_rate": 0.0001
+   "learning_rate": 0.00002
  }

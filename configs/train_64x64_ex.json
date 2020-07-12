@@ -19,6 +19,6 @@
   "train_output": "train_realx_hcp_fullcart_withphase_64.mat",
 
 
-  "learning_rate": 0.001
+  "learning_rate": 0.00002
   
 }
