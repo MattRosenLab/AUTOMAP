@@ -2,7 +2,7 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras import regularizers
-
+from tensorflow.keras.layers import *
 
 def AUTOMAP_Basic_Model(config):
 
@@ -16,6 +16,7 @@ def AUTOMAP_Basic_Model(config):
     
     c_1 = layers.Conv2D(64,5,strides=1,padding='same',activation='relu')(fc_3)
     c_2 = layers.Conv2D(64,5,strides=1,padding='same',activation='relu',activity_regularizer=regularizers.l1(.0001))(c_1)
+    
     c_3 = layers.Conv2DTranspose(1,7,strides=1,padding='same')(c_2)
 
     output = layers.Reshape((config.fc_output_dim,))(c_3) 
@@ -23,4 +24,3 @@ def AUTOMAP_Basic_Model(config):
     model = keras.Model(inputs = fc_1,outputs = output, name='output')
     model.summary()
     return model
-

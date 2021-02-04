@@ -29,7 +29,7 @@ class AUTOMAP_Inferencer:
             
             ind_start = step*self.config.batch_size
             predictions = self.inference_step(ind_start,batch_size)
-
+            
             output_array[ind_start:ind_start+batch_size,:]=predictions
 
         

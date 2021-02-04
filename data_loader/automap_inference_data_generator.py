@@ -20,7 +20,10 @@ class InferenceDataGenerator:
 
         inference_in_key = list(inference_in_dict.keys())[0]
         inference_out_key = list(inference_out_dict.keys())[0]
-
+        
+        self.input = inference_in_dict[inference_in_key]
+        self.output = inference_out_dict[inference_out_key]
+        
         self.input = np.transpose(inference_in_dict[inference_in_key])
         self.output = np.transpose(inference_out_dict[inference_out_key])
 

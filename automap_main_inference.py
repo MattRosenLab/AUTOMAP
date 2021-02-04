@@ -1,7 +1,6 @@
 import tensorflow as tf
 
 from data_loader.automap_inference_data_generator import InferenceDataGenerator
-from models.automap_model import AUTOMAP_Basic_Model 
 from trainers.automap_inferencer import AUTOMAP_Inferencer
 from utils.config import process_config
 from utils.dirs import create_dirs
