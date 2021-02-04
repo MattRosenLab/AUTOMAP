@@ -1,10 +1,10 @@
 {
-  "exp_name": "train_64x64",
+  "exp_name": "train",
 
-  "resume": 1,
-  "loadmodel_dir": "/hdd2/misc_hdd2/automap_opensource/AUTOMAP/experiments/train_64x64/checkpoint",
+  "resume": 0,
+  "loadmodel_dir": null,
 
-  "num_epochs": 100,
+  "num_epochs": 20,
   "batch_size": 100,
 
   "fc_input_dim": 8192,
@@ -14,10 +14,11 @@
   "im_h": 64,
   "im_w": 64,
   
-  "data_dir": "/hdd2/misc_hdd2/automap_opensource/automap_github_prep/models/Test_64x64/",
-  "train_input": "train_fft_x_hcp_fullcart_withphase_64.mat",
-  "train_output": "train_realx_hcp_fullcart_withphase_64.mat",
-
+  "data_dir": "/hdd2/misc_hdd2/danyal_data64by64/",
+  "train_input": "train_fft_x_64.mat",
+  "train_output": "train_x_real.mat",
+  "test_input": "test_fft_x_64.mat",
+  "test_output": "test_x_real.mat",
 
   "learning_rate": 0.00002
   
