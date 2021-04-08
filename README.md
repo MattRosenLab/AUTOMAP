@@ -4,7 +4,7 @@ Welcome to the official repository for AUTOMAP (Automated Transform by Manifold 
 
 [Article PDF](http://martinos.org/lfi/pdf/AUTOMAP_Nature_2018.pdf): B. Zhu, J. Z. Liu, S. F. Cauley, B. R. Rosen, and M. S. Rosen, “Image reconstruction by domain-transform manifold learning,” Nature, vol. 555, no. 7697, pp. 487 EP ––492, Mar. 2018
 
-[MRI Training and Testing Data](https://www.dropbox.com/sh/vr8v2zl0zs72y7e/AACrEZQcGpWJWVOAj_6KcQvSa?dl=0) This folder contains 'train_input.mat' for training AUTOMAP with labels 'train_x_real.mat' and 'train_x_img.mat' for training each neural network respectively. There is also test images with similar input and output name formats. 
+[MRI Training and Testing Data](https://www.dropbox.com/sh/vr8v2zl0zs72y7e/AACrEZQcGpWJWVOAj_6KcQvSa?dl=0) This folder contains 'train_input.mat' for training AUTOMAP with labels 'train_x_real.mat' and 'train_x_img.mat' for training each neural network respectively. There is also test images with similar input and output name formats. Please download these files and change the data directory inputs in the configs folder to your local directories. 
 
 ## Training
 
