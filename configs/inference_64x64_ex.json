@@ -1,7 +1,7 @@
 {
   "exp_name": "train",
 
-  "loadmodel_dir": "/hdd2/misc_hdd2/danyal_automap/Automap_updated/experiments/train/checkpoint",
+  "loadmodel_dir": "/hdd2/misc_hdd2/danyal_automap/Automap/experiments/train/checkpoint",
 
   "num_epochs": 100,
   "batch_size": 100,
@@ -17,7 +17,7 @@
   "inference_input": "test_fft_x_64.mat",
   "inference_target_output": "test_x_real.mat",
 
-  "save_inference_output":"/hdd2/misc_hdd2/danyal_automap/Automap_updated/experiments/train_64.mat",
+  "save_inference_output":"/hdd2/misc_hdd2/danyal_automap/Automap/experiments/train_64.mat",
 
   "learning_rate": 0.00002
 

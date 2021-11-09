@@ -14,13 +14,15 @@ def AUTOMAP_Basic_Model(config):
 
     fc_3 = layers.Reshape((config.im_h,config.im_w,1))(fc_3)
     
+    fc_3 = layers.ZeroPadding2D(4)(fc_3)
+    
     c_1 = layers.Conv2D(64,5,strides=1,padding='same',activation='relu')(fc_3)
-    c_2 = layers.Conv2D(64,5,strides=1,padding='same',activation='relu',activity_regularizer=regularizers.l1(.0001))(c_1)
+    c_2 = layers.Conv2D(64,5,strides=1,padding='same',activation='relu')(c_1)
     
     c_3 = layers.Conv2DTranspose(1,7,strides=1,padding='same')(c_2)
+    
+    output = layers.Reshape(((config.im_h + 8)*(config.im_w + 8),))(c_3) 
 
-    output = layers.Reshape((config.fc_output_dim,))(c_3) 
-
-    model = keras.Model(inputs = fc_1,outputs = output, name='output')
+    model = keras.Model(inputs = fc_1,outputs = [c_2,output], name='output')
     model.summary()
     return model

@@ -9,7 +9,7 @@ import pickle
 import matplotlib.pyplot as plt
 import numpy as np
 
-filename1 = '/hdd2/misc_hdd2/danyal_automap/Automap_updated/experiments/train/checkpoint/loss_training.p'
+filename1 = '/hdd3/Automap/experiments/train/checkpoint/loss_training.p'
 val = np.load(open(filename1,'rb'))
 plt.plot(val[0,:], label='Training')
 plt.plot(val[1,:], label='Test')

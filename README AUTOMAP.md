@@ -1,11 +1,8 @@
 # AUTOMAP
 
-Welcome to the official repository for AUTOMAP (Automated Transform by Manifold Approximation), a Tensorflow (> 2.0) implementation of the model described in:
+Welcome to the official repository for AUTOMAP (Automated Transform by Manifold Approximation)
 
 [Article PDF](http://martinos.org/lfi/pdf/AUTOMAP_Nature_2018.pdf): B. Zhu, J. Z. Liu, S. F. Cauley, B. R. Rosen, and M. S. Rosen, “Image reconstruction by domain-transform manifold learning,” Nature, vol. 555, no. 7697, pp. 487 EP ––492, Mar. 2018
-
-
-[MRI Training and Testing Data](https://www.dropbox.com/s/7ysptucyro6imq8/data.7z?dl=1) The data_64 folder contains, 64x64 images, 'train_input.mat' for training AUTOMAP with labels 'train_x_real.mat' and 'train_x_img.mat' for training each neural network respectively. There is also test images with similar input and output name formats. Please download these files and change the data directory inputs in the configs folder to your local directories. 
 
 ## Training
 
@@ -45,6 +42,9 @@ Some key config file entries:
 
 "train_output": Output data file (as .mat file)
 
+"test_input": Input data file (as .mat file)
+
+"test_output": Output data file (as .mat file)
 
 ## Inference
 
