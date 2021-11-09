@@ -1,0 +1,26 @@
+{
+  "exp_name": "train",
+
+  "loadmodel_dir": "/hdd3/Automap/experiments/train/checkpoint",
+
+  "num_epochs": 100,
+  "batch_size": 100,
+
+  "fc_input_dim": 32768,
+  "fc_hidden_dim": 16384,
+  "fc_output_dim": 16384,
+
+  "im_h": 128,
+  "im_w": 128,
+
+  "data_dir": "/hdd2/misc_hdd2/danyal_data128by128/",
+  "inference_input": "test_fft_x_hcpD_fullcart_withphase_128x128.mat",
+  "inference_target_output": "test_realx_hcpD_fullcart_withphase_128x128.mat",
+
+  "save_inference_output":"/hdd3/Automap/experiments/train.mat",
+
+  "learning_rate": 0.00002
+
+}
+
+
