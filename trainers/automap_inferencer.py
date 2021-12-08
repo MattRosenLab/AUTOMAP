@@ -30,11 +30,12 @@ class AUTOMAP_Inferencer:
             ind_start = step*self.config.batch_size
             predictions = self.inference_step(ind_start,batch_size)
             
-            predictions = tf.reshape(predictions,[self.config.batch_size,self.config.im_h + 8,self.config.im_w + 8])
+            bs = predictions.shape[0]
+            predictions = tf.reshape(predictions,[bs,self.config.im_h + 8,self.config.im_h + 8])
             predictions = tf.transpose(predictions,perm=[1,2,0])
-            predictions = tf.image.resize_with_crop_or_pad(predictions, self.config.im_h, self.config.im_w)
+            predictions = tf.image.resize_with_crop_or_pad(predictions, self.config.im_h, self.config.im_h)
             predictions = tf.transpose(predictions,perm=[2,0,1])
-            predictions = tf.reshape(predictions,[self.config.batch_size,self.config.fc_output_dim])
+            predictions = tf.reshape(predictions,[bs,self.config.fc_output_dim])            
             
             output_array[ind_start:ind_start+batch_size,:]=predictions
 
