@@ -43,9 +43,9 @@ Some key config file entries:
 
 "data_dir": Directory of Training Data where "train_input" and "train_output" are located.
 
-"train_input": Input data file (as .mat file)
+"train_input": Input data file (as .mat file) , "train_input.mat"
 
-"train_output": Output data file (as .mat file)
+"train_output": Output data file (as .mat file) , "train_x_real.mat" or "train_x_img.mat"
 
 
 ## Inference
