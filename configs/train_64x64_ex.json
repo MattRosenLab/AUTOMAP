@@ -15,9 +15,9 @@
   "im_w": 64,
   
   "data_dir": "/hdd2/misc_hdd2/danyal_data64by64/",
-  "train_input": "train_fft_x_64.mat",
+  "train_input": "train_input.mat",
   "train_output": "train_x_real.mat",
-  "test_input": "test_fft_x_64.mat",
+  "test_input": "test_input.mat",
   "test_output": "test_x_real.mat",
 
   "learning_rate": 0.00002
