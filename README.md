@@ -5,7 +5,7 @@ Welcome to the official repository for AUTOMAP (Automated Transform by Manifold 
 [Article PDF](http://martinos.org/lfi/pdf/AUTOMAP_Nature_2018.pdf): B. Zhu, J. Z. Liu, S. F. Cauley, B. R. Rosen, and M. S. Rosen, “Image reconstruction by domain-transform manifold learning,” Nature, vol. 555, no. 7697, pp. 487 EP ––492, Mar. 2018
 
 
-[MRI Training and Testing Data](https://www.dropbox.com/sh/fy5gnn6t1c6qgl2/AAAqIBMIaAlr4ZKLby-9u4QSa?dl=1) The data_64 folder contains, 64x64 images, 'train_input.mat' for training AUTOMAP with labels 'train_x_real.mat' and 'train_x_img.mat' for training each neural network respectively. There are also test images with similar input and output name formats. Please download these files and change the data directory inputs in the configs folder to your local directories. 
+[MRI Training and Testing Data](https://www.dropbox.com/sh/fy5gnn6t1c6qgl2/AAAqIBMIaAlr4ZKLby-9u4QSa?dl=1) The data_64 folder contains, 64x64 images, 'train_input.mat' for training AUTOMAP with labels 'train_x_real.mat' and 'train_x_img.mat' for training each neural network respectively. There are also test images with similar input and output name formats. Please download these files and change the data directory inputs in the configs folder to your local directories. The data files were generated using Matlab code and thus are .mat format but this is not a requirement. You can easily adjust the automap_data_generator.py and automap_inference_data_generator.py to load numpy data (or other formats).
 
 This AUTOMAP version was updated (11/9/2021) to match the legacy hardcoded loss function.
 
