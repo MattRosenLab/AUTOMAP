@@ -14,7 +14,7 @@
   "im_w": 64,
 
   "data_dir": "/hdd2/misc_hdd2/danyal_data64by64/",
-  "inference_input": "test_fft_x_64.mat",
+  "inference_input": "test_input.mat",
   "inference_target_output": "test_x_real.mat",
 
   "save_inference_output":"/hdd2/misc_hdd2/danyal_automap/Automap/experiments/train_64.mat",
