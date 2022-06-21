@@ -1,6 +1,6 @@
 # AUTOMAP
 
-Welcome to the official repository for AUTOMAP (Automated Transform by Manifold Approximation), a Tensorflow (> 2.0) implementation of the model described in:
+Welcome to the official repository for AUTOMAP (Automated Transform by Manifold Approximation), a Tensorflow (2.2.0) implementation of the model described in:
 
 [Article PDF](http://martinos.org/lfi/pdf/AUTOMAP_Nature_2018.pdf): B. Zhu, J. Z. Liu, S. F. Cauley, B. R. Rosen, and M. S. Rosen, “Image reconstruction by domain-transform manifold learning,” Nature, vol. 555, no. 7697, pp. 487 EP ––492, Mar. 2018
 
