@@ -15,8 +15,8 @@ class AUTOMAP_Trainer:
         self.data = data
         self.valdata = valdata
 
-        self.train_loss = tf.keras.metrics.Mean(name='train_loss')
-        self.val_loss = tf.keras.metrics.Mean(name='val_loss')
+        self.train_loss = 0
+        self.val_loss = 0
         
     def custom_loss(self,targets,predictions,c_2):
 
