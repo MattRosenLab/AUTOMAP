@@ -9,6 +9,8 @@ Welcome to the official repository for AUTOMAP (Automated Transform by Manifold 
 
 This AUTOMAP version was updated (11/9/2021) to match the legacy hardcoded loss function.
 
+Lab website: https://rosenlab.martinos.org/
+
 ## Training
 
 Training utilizes `automap_main_train.py` and a JSON config file.
